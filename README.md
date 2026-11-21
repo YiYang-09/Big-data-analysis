@@ -23,6 +23,18 @@ Lab reports for **732A54 / TDDE31 Big Data Analysis** at Linköping University. 
 
 **Data:** Swedish climate open data from SMHI — semicolon-separated CSV files of station temperature and precipitation readings.
 
-> This repository contains only the PDF reports (which embed the code and results) and the course instructions, not standalone source files.
+## Code
+
+The PySpark scripts from the reports are in [`code/`](code):
+
+| Folder | Contents |
+|---|---|
+| [`code/lab1_spark_rdd`](code/lab1_spark_rdd) | Assignments 1–5 with the Spark RDD API |
+| [`code/lab2_spark_sql`](code/lab2_spark_sql) | The same assignments with Spark SQL / DataFrames |
+| [`code/lab3_spark_ml`](code/lab3_spark_ml) | Kernel model for hourly temperature forecasts |
+
+The scripts read their input from HDFS (`BDA/input/...`) and were run on the Sigma cluster, for example with `spark-submit code/lab1_spark_rdd/ex1_yearly_min_max_temperature.py`. The data files are not included in this repository.
+
+The PDF reports contain the results and written answers.
 
 [`LabCompendium/`](LabCompendium) contains the official course lab instructions, including cluster setup and a Spark SQL introduction.
